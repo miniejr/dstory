@@ -1,0 +1,48 @@
+<div class="space bg-image">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="center-title">
+                    <h2>Baca Cerita</h2>
+                </div>
+            </div>
+        </div>
+
+       <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="add-box">
+                                <img src="{{story.user.image}}" class="img-fluid shield rounded-circle" alt="#">
+                                <div class="add-content">
+                                    <h3>{{story.user.displayName}}</h3>
+                                </div>
+                                <div class="add-btn">
+                                    <a href="/stories/user/{{story.user._id}}" data-toggle="modal" data-target="#contactmodal" class="btn btn-success">More From {{story.user.firstName}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+        <div class="row">
+            <div class="col-md-12 ml-auto">
+                <div class="insurance-type d-flex align-items-center">
+
+                    <div class="insurance-type_title">
+                        <h3>{{story.title}}
+                            <small>{{{editIcon story.user user story._id false}}}</small>
+                        </h3>
+                        <p>{{formatDate date 'MMMM Do YYYY, h:mm:ss a'}}</p>
+                        <p> {{{story.body}}}</p>
+                    </div>
+                </div>
+               
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="banner-img-2">
+        <img src="/images/health-family-illustration.svg" width="978" class="img-fluid" alt="#">
+    </div>
+</div>
+
+

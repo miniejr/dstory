@@ -1,0 +1,66 @@
+{{!-- <h3>Edit Story</h3>
+<div class="row">
+    <form action="/stories/{{story._id}}" method="POST" class="col s12">
+    <input type="hidden" name="_method" value="PUT">
+        <div class="row">
+            <div class="input-field">
+                <input type="text" id="title" name="title" value="{{story.title}}">
+                <label for="title">Title</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <select id="status" name="status">
+                    {{#select story.status}}
+                    <option value="public" selected>Public</option>
+                    <option value="private">Private</option>
+                    {{/select}}
+                </select>
+                <label for="status">Status</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <h5>Tell Us Your Story:</h5>
+                <textarea id="body" name="body">{{story.body}}</textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <input type="submit" value="Save" class="btn">
+            <a href="/dashboard" class="btn orange">Cancel</a>
+        </div>
+    </form>
+</div> --}}
+
+
+<div class="container mt-4">
+    <h3>Ayo bikin Ceritamu</h3>
+<form action="/stories/{{story._id}}" method="POST" class="col s12">
+<input type="hidden" name="_method" value="PUT">
+  <div class="form-group  ">
+    <label for="exampleFormControlInput1">Judul</label>
+    <input  class="form-control" type="text" id="title" name="title"placeholder="masukan judul cerita kamu" value="{{story.title}}">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Status</label>
+    <select class="form-control" id="status" name="status">
+          {{#select story.status}}
+       <option value="public" selected>Public</option>
+                    <option value="private">Private</option>
+       {{/select}}
+    </select>
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Tulis Ceritamu</label>
+    <textarea class="form-control" id="body" name="body">{{story.body}}</textarea>
+  </div>
+   <div class="row">
+            <input type="submit" value="Save" class="btn">
+            <a href="/dashboard" class="btn orange">Cancel</a>
+        </div>
+</form>
+</div>

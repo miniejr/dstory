@@ -1,0 +1,38 @@
+
+
+<section class="space bg-light">
+<div class="container">
+    <div class="col-md-12">
+    <div class="center-title">
+        <h2>Lihat Cerita</h2>
+        <p>Baca dan buat ceritamu</p>
+    </div>
+</div>
+    <div class="row">
+        {{#each stories}}
+        <div class="col-md-6 col-lg-4">
+            <div class="item-box">
+                
+                    <a href="/stories/user/{{user._id}}"> <img src="{{user.image}}" class="img-fluid rounded-circle" alt="#"></a>
+               
+                <h6>{{title}}</h6>
+                <p>{{ stripTags (truncate body 160)}}</p>
+                <a href="/stories/{{_id}}" class="btn grey">Read More</a>
+                <div class="card-image">
+                    {{{editIcon user ../user _id}}}
+                </div>
+            </div>
+        </div>
+
+
+        {{else}}
+        <p>No stories to display</p>
+
+        {{/each}}
+
+    </div>
+
+</div>
+</section>
+
+

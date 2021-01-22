@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+         <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+    
+    <!-- Circular-std CSS -->
+    <link rel="stylesheet" href="/css/circular-std.css" type="text/css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css" type="text/css">
+     <link rel="stylesheet" type="text/css" href="/css/iosoon-style.css">
+    <link rel="stylesheet" type="text/css" href="/css/iosoon-theme7.css">
+</head>
+
+    <title>StoryBooks</title>
+</head>
+
+<body>
+
+    {{> _header}}
+    
+
+    <div class=".container-fluid">
+        {{{body}}}
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.14.1/ckeditor.js"
+        integrity="sha256-bEIQpI72w9NJuIVhTLFUF2/8uxl0u5800r8ddViuv+o=" crossorigin="anonymous"></script>
+         <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+
+
+           CKEDITOR.replace('body', {
+            plugins: 'wysiwygarea, toolbar, basicstyles, link'
+        })
+        
+
+
+    </script>
+    <script src="/js/jquery.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/paper-full.min.js"></script>
+<script src="/js/animation1.js"></script>
+<script src="/js/main.js"></script>
+</body>
+
+</html>

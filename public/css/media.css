@@ -1,0 +1,38 @@
+@media (max-width: 992px) { 
+  
+    .banner-img img{
+    min-width: 40%;
+    position: absolute;;
+   margin-top:100px ;
+    }
+
+
+
+.main-title{
+    margin-top: 50px;
+    text-align: center;
+   
+}
+
+.banner-img{
+    margin-top: 30px;
+}
+
+.bg-image{
+    margin-top: 100px;
+}
+
+.bg-light{
+    margin-top: 100px;
+}
+
+}
+
+
+@media (max-width: 523px){
+
+    .banner-img img{
+        display: none;
+    }
+
+}
